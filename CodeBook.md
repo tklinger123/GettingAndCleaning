@@ -4,11 +4,11 @@ Project for Johns Hopkins University Coursera course Getting and Cleaning Data i
 
 ## Tidy Data File
 
-##### [run_analysis.txt](run_analysis.txt)
+#### [run_analysis.txt](run_analysis.txt)
 * 180 rows and 81 columns
 * Aggregates the mean of each feature for each activity and each subject
 
-##### Variables stored in [run_analysis.txt](run_analysis.txt)
+#### Variables stored in [run_analysis.txt](run_analysis.txt)
 * column 1 : "Subject" : Subject ID number for 30 subjects (1-30)
 * column 2 : "Activity" : Factor variable with six levels representing the physical activity performed by the subject during the measurement. Values include:
 	* WALKING
@@ -22,8 +22,8 @@ Project for Johns Hopkins University Coursera course Getting and Cleaning Data i
 	* mean and std stand for average and standard deviation respectively
 	* X, Y and Z represent Cartesian directions of the accelerometer coordinate frame
 
-Transformations from Original to Tidy Data
-==========================================
+## Transformations from Original to Tidy Data
+
 The following transformation were applied to the original data
 
 1.  applied regular expression <code>'.*(mean)|(std)\\(\\).*'</code> to detect and keep features containing 'mean' or 'std'
