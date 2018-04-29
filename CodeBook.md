@@ -4,14 +4,11 @@ Project for Johns Hopkins University Coursera course Getting and Cleaning Data i
 
 ## Tidy Data File
 
-##### [tidy.txt](tidy.txt)
-* 10,299 rows and 81 columns
-
-##### [tidy_aggregated.txt](tidy_aggregated.txt)
+##### [run_analysis.txt](run_analysis.txt)
 * 180 rows and 81 columns
 * Aggregates the mean of each feature for each activity and each subject
 
-##### Variables stored in [tidy.txt](tidy.txt) and [tidy_aggregated.txt](tidy_aggregated.txt)
+##### Variables stored in [run_analysis.txt](run_analysis.txt)
 * column 1 : "Subject" : Subject ID number for 30 subjects (1-30)
 * column 2 : "Activity" : Factor variable with six levels representing the physical activity performed by the subject during the measurement. Values include:
 	* WALKING
