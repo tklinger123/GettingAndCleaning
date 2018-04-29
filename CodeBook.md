@@ -24,23 +24,13 @@ Project for Johns Hopkins University Coursera course Getting and Cleaning Data i
 
 ## Transformations from Original to Tidy Data
 
-The following transformation were applied to the original data
+The following transformation were applied to the original data:
 
-1. Column names were defined using <code>'c("V1","Activity")'</code>. 
-
-2.  <code>'-'</code> character in feature names substituted with a period <code>'.'</code>
-3.  <code>'()'</code> character pattern substituted with empty string <code>''</code>
-4.  Numeric Activity labels converted to character labels according to:
-	* 1 -> WALKING
-	* 2 -> WALKING_UPSTAIRS
-	* 3 -> WALKING_DOWNSTAIRS
-	* 4 -> SITTING
-	* 5 -> STANDING
-	* 6 -> LAYING	
-5.  Subject column named "Subject"
-6.  Activity column named "Activity"
-7.  Row combined train and test data
-8.  Column combined Subject, Activty and Feature columns
-7.  Write [tidy.txt](tidy.txt)
-8.  Aggregate by "Subject" and "Activity" and write [tidy_aggregated.txt](tidy_aggregated.txt)
-	
+1. Column names were defined to training data using <code>'c("V1","Activity")'</code>. 
+2. y-train data was merged with activity label.
+3. Names from features were assigned to the x_train data frame.
+4. y_train, activity labels, and x_train were combined using <code>'cbind(train_merge, x_train)'</code>.
+5. The first column was removed from the resulting data to avoid error "duplicate column name".
+6. Only the columns containing means and std were selected.
+7. Steps 1. to 6. were repeated for test data.
+8. Train and test data were combined and summarized.
