@@ -1,9 +1,9 @@
-## CodeBook.md 
+# CodeBook.md 
 
 Project for Johns Hopkins University Coursera course Getting and Cleaning Data in the Data Science specialization
 
-Tidy Data Files
-==========
+## Tidy Data File
+
 ##### [tidy.txt](tidy.txt)
 * 10,299 rows and 81 columns
 
